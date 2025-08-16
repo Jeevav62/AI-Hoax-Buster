@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>AI Hoax Buster</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div id="popupContainer">
+    <h2>🕵️‍♂️ AI Hoax Buster</h2>
+    <select id="modeToggle">
+      <option value="page">Page Scan</option>
+      <option value="manual">Manual Mode</option>
+    </select>
+    <textarea id="manualInput" placeholder="Paste your text here..." rows="6" style="display:none;"></textarea>
+    <button id="scanBtn">🔍 Scan</button>
+    <div id="spinner" style="display:none;">⏳ Analyzing...</div>
+    <div id="resultContainer" style="opacity: 0;"></div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
